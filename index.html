@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mydiv{
+            width:200px;
+            height:fit-content;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <script >
+        let myDiv = document.createElement("div");
+        myDiv.setAttribute("id", "mydiv");
+        myDiv.style.height = "400px";
+        myDiv.style.width = "300px";
+        myDiv.style.borderColor = "red";
+        myDiv.style.border= "2px solid";
+      
+        document.body.appendChild(myDiv)
+
+        let myDiv1 = document.createElement("div");
+        myDiv1.setAttribute("class", "mydiv1");
+        myDiv1.style.height = "50%";
+        myDiv1.style.backgroundColor = "#147899";
+        myDiv1.style.padding="10px";
+        myDiv.appendChild(myDiv1);
+
+        let h1 = document.createElement("h1") ;
+        h1.setAttribute("id", "header");
+        h1.innerHTML= "10K-Coders";
+        h1.style.textAlign ="center";
+        h1.style.color="white";
+        h1.style.margin="0px";
+        h1.style.marginBottom = "10px"
+        myDiv1.appendChild(h1);
+        h1.style.backgroundColor="#784568";
+
+        let imgDiv = document.createElement("div");
+        imgDiv.setAttribute("id", "imgDiv");
+        imgDiv.style.width="50%";
+        imgDiv.style.height = "70%";
+        imgDiv.style.backgroundColor="#879653";
+        imgDiv.style.borderRadius = "50%"
+        imgDiv.style.border="1px solid white"
+        imgDiv.style.marginLeft = "22%";
+        imgDiv.style.padding = "10px"
+        myDiv1.appendChild(imgDiv);
+        
+        let myDiv2= document.createElement("div");
+        myDiv2.setAttribute("class", "mydiv2");
+        myDiv2.style.height = "40%";
+        myDiv2.style.backgroundColor = "#007899";
+        myDiv2.style.textAlign ="center";
+        myDiv2.style.color="white";
+        myDiv2.style.padding="10px"
+        myDiv.appendChild(myDiv2);
+
+        let h2=document.createElement('h3');
+        h2.setAttribute("class", "name");
+        h2.innerHTML ="Name : Bakka Vamshi";
+        h2.style.padding="10px";
+        h2.style.margin="0px";
+        myDiv2.appendChild(h2);
+        
+        let p=document.createElement('p');
+        p.setAttribute("class", "role");
+        p.innerHTML ="Role : Web-Dev";
+        p.style.margin="0px";
+        myDiv2.appendChild(p);
+
+        let id=document.createElement('p');
+        id.setAttribute("class", "id");
+        id.innerHTML ="Id : 03396";
+        id.style.margin="10px";
+        myDiv2.appendChild(id);
+
+        let bloodGrp=document.createElement('p');
+        bloodGrp.setAttribute("class", "bloodgrp");
+        bloodGrp.innerHTML ="BloodGrp : - A";
+        bloodGrp.style.margin="10px";
+        myDiv2.appendChild(bloodGrp);
+
+        let img = document.createElement("img");
+        img.setAttribute("src", "img1.png");
+        img.style.height="100%";
+        img.style.borderRadius = "50%";
+        imgDiv.appendChild(img);
+
+        let p1=document.createElement('p');
+        p1.setAttribute("class", "role");
+        p1.style.padding= "9px";
+        p1.innerText= "infovamshi123@emial.com"
+        p1.style.margin="0px";
+        p1.style.backgroundColor="#784568";
+        myDiv2.appendChild(p1);
+    </script>
+</body>
+
+
+</html>
